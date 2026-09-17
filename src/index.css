@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-pink-image {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(91%) saturate(3288%) hue-rotate(318deg) brightness(91%) contrast(91%);
+}
+
+.dark .theme-pink-image {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(45%) saturate(2550%) hue-rotate(296deg) brightness(101%) contrast(91%);
+}
+
+/* Button.css */
+.dynamic-button {
+    position: relative;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.dynamic-button::before,
+.dynamic-button::after {
+    content: '';
+    color: #DB2777;
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: width 0.5s ease;
+}
+
+.dynamic-button::before {
+    left: 0;
+}
+
+.dynamic-button::after {
+    right: 0;
+}
+
+.dynamic-button:hover::before,
+.dynamic-button:hover::after {
+    width: 50%;
+}
+
+/* dynamic-button2 */
+.dynamic-button2 {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.dynamic-button2::before,
+.dynamic-button2::after {
+    content: '';
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #DB2777;
+    transition: width 0.5s ease;
+}
+
+.dynamic-button2::before {
+    left: 0;
+}
+
+.dynamic-button2::after {
+    right: 0;
+}
+
+.dynamic-button2:hover::before,
+.dynamic-button2:hover::after {
+    width: 50%;
+}
+
+/* Button.css */
+.dynamic-button-premium {
+    position: relative;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.dynamic-button-premium::before,
+.dynamic-button-premium::after {
+    content: '';
+    color: #DB2777;
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #FFF7FA;
+    transition: width 0.5s ease;
+}
+
+.dynamic-button-premium::before {
+    left: 0;
+}
+
+.dynamic-button-premium::after {
+    right: 0;
+}
+
+.dynamic-button-premium:hover::before,
+.dynamic-button-premium:hover::after {
+    width: 50%;
+}
+
+/* object */
+
+/* .object-cover {
+    object-fit: cover;
+    object-position: 50% 50%;
+} */
+
+
+/* /shadow counter */
+
+.shadowCounter {
+    text-shadow: 0px 5px 500px -5px #DB2777;
+}
+
+
+
+/* styles.css */
+.react-select__control {
+    background-color: #ffffff;
+    border-color: #FBCFE8;
+}
+
+.react-select__menu {
+    background-color: #ffffff;
+}
+
+.react-select__option {
+    background-color: #FFF7FA;
+    color: #4A102B;
+}
+
+.react-select__option--is-selected {
+    background-color: #DB2777 !important;
+    color: #fff;
+}
+
+.react-select__option--is-focused {
+    background-color: #FCE7F3;
+}
+
+.dark .react-select__control {
+    background-color: #351026;
+    border-color: #EC4899;
+}
+
+.dark .react-select__menu {
+    background-color: #351026;
+}
+
+.dark .react-select__option {
+    background-color: #4A102B;
+    color: #fff;
+}
+
+.dark .react-select__option--is-selected {
+    background-color: #DB2777;
+    color: #fff;
+}
+
+.dark .react-select__option--is-focused {
+    background-color: #4A102B;
+}
+
+
+/* rotate */
+.rotating {
+    -webkit-animation: rotate 5s linear alternate-reverse infinite;
+    animation: rotate 5s linear alternate-reverse infinite;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-5deg);
+
+    }
+
+    100% {
+        transform: rotate(12deg);
+    }
+
+}
+
+.rotating2 {
+    -webkit-animation: rotate2 5s linear alternate-reverse infinite;
+    animation: rotate2 5s linear alternate-reverse infinite;
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(5deg) scaleX(-1);
+    }
+
+    100% {
+        transform: rotate(-12deg) scaleX(-1);
+    }
+}
+
+
+
+
+/* 
+
+*/
+/* styles.css */
+.range-input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #DB2777;
+    /* Change this color to your desired background color */
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+
+.range-input:hover {
+    opacity: 1;
+}
+
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #F472B6;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+/* / */
+
+/* styles.css */
+.custom-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    -webkit-appearance: none;
+    /* Remove default appearance for Webkit browsers */
+    -moz-appearance: none;
+    /* Remove default appearance for Firefox */
+    appearance: none;
+    /* Remove default appearance */
+    position: relative;
+}
+
+.custom-select:hover {
+    background-color: #FFF1F6;
+    /* Background color on hover */
+}
+
+.custom-select option:hover {
+    background-color: #DB2777;
+    /* Change this color to your desired background color */
+    color: white;
+    /* Change this color to your desired text color */
+}
+
+.custom-select option {
+    background-color: white;
+    /* Default background color for options */
+    color: black;
+    /* Default text color for options */
+}
+
+/* img styles */
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+}
+
+.fallback-text {
+    position: absolute;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+.image-container img.error+.fallback-text {
+    display: block
+}
+
+
+/* /chat bubble/ */
+
+.button-shadow {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    background-color: #DB2777;
+    /* Adjust color as needed */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: shadow-pulse 2s infinite;
+}
+
+.button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(219, 39, 119, 0.55);
+    }
+
+    100% {
+        box-shadow: 0 0 30px 10px rgba(244, 175, 0, 0);
+    }
+}
+
+.button-shadow {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    /* Adjust this to reduce the delay between animations */
+}
+
+
+
+/* css for get started select input */
+
+/* NewBioData.css */

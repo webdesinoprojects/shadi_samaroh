@@ -1,0 +1,8 @@
+section .active {
+    background: #DB2777;
+    background: linear-gradient(90deg, #DB2777 0%, #FFF1F6 100%);
+    color: white;
+}
+section .active:hover {
+    color: white !important;
+}
